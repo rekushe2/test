@@ -313,7 +313,7 @@ async def playfrom(client, m: Message):
    : {m.from_user.mention}**
 """,                    )
             await hmm.delete()
-            await m.reply(                f"  {lmt}     \n•  {HNDLR}_     **"            )
+            await m.reply(                f"  {lmt}     \nÂ•  {HNDLR}_     **"            )
         except Exception as e:
             await hmm.edit(f"**  ** \n`{e}`")
 
@@ -389,7 +389,7 @@ async def pause(client, m: Message):
     if chat_id in QUEUE:
         try:
             await call_py.pause_stream(chat_id)
-            await m.reply(                f"**    .**\n\n•        » `{HNDLR}_`"            )
+            await m.reply(                f"**    .**\n\nÂ•        Â» `{HNDLR}_`"            )
         except Exception as e:
             await m.reply(f"**  ** \n`{e}`")
     else:
