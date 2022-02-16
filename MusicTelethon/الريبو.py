@@ -69,7 +69,7 @@ async def repo(client, m: Message):
     await m.delete()
     REPO = f"""
 <b>  اهلا {m.from_user.mention}!
- هذا ميوزك العرب @cen3d
+ قناة @cen3d
 - للمطور : @iiwiw
 """
     await m.reply(REPO, disable_web_page_preview=True)
